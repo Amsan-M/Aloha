@@ -3,6 +3,11 @@
 /* Header for Mobile */
 /* @media screen and (max-width:600px){ */
 
+#shop[tabindex="-1"]:focus {
+        outline:0;
+       
+    }
+
 header{ 
 
     display: flex;
@@ -239,7 +244,7 @@ header{
     color: white;
     text-transform: uppercase;
     margin-bottom: 0.25rem;
-   font-family: raleway;
+   font-family: Raleway;
    font-size:	0.875rem;
  
 } 
@@ -259,7 +264,7 @@ header{
     color: white;
     text-transform: uppercase;
     border-right: 0.25rem solid;
-    font-family: raleway;
+    font-family: Raleway;
    font-size:	0.875rem;
 } 
 
@@ -277,7 +282,7 @@ header{
     color: white;
     text-transform: uppercase;
     border-bottom: 0.25rem solid;
-    font-family: raleway;
+    font-family: Raleway;
    font-size:	0.875rem;
     
 } 
@@ -298,7 +303,7 @@ header{
     text-transform: uppercase;
     border-bottom: 0.25rem solid;
     border-right: 0.25rem solid;
-    font-family: raleway;
+    font-family: Raleway;
    font-size:	0.875rem;
 } 
 
@@ -317,7 +322,7 @@ header{
     color: white;
     text-transform: uppercase;
     border-bottom: 0.25rem solid;
-    font-family: raleway;
+    font-family: Raleway;
    font-size:	0.875rem;
 
 } 
@@ -335,7 +340,7 @@ header{
     font-size: 14px;
     color: white;
     text-transform: uppercase;
-    font-family: raleway;
+    font-family: Raleway;
    font-size:	0.875rem;
    
 } 
@@ -378,7 +383,7 @@ header{
     margin-bottom: 0.25rem;
     border-right: 0.25rem solid;
     background-position: center;
-    font-family: raleway;
+    font-family: Raleway;
    font-size:	1rem;
  }
 
@@ -400,7 +405,7 @@ header{
     margin-bottom: 0.25rem;; 
     border-right: 0.25rem solid;
     background-position: center;
-    font-family: raleway;
+    font-family: Raleway;
    font-size:	1rem;
 } 
 
@@ -421,7 +426,7 @@ header{
     text-transform: uppercase;
     margin-bottom: 0.25rem; 
     background-position: center;
-    font-family: raleway;
+    font-family: Raleway;
    font-size:	1rem;
 } 
 
@@ -444,7 +449,7 @@ header{
     margin-bottom: 0.25rem;
     border-right: 0.25rem solid;
     background-position: center;
-    font-family: raleway;
+    font-family: Raleway;
    font-size:	1rem;
 }
 
@@ -467,7 +472,7 @@ header{
     margin-bottom: 0.25rem;
     border-right: 0.25rem solid;
     background-position: center;
-    font-family: raleway;
+    font-family: Raleway;
    font-size:	1rem;
     
 } 
@@ -490,7 +495,7 @@ header{
     text-transform: uppercase;
     margin-bottom: 0.25rem;
     background-position: center;
-    font-family: raleway;
+    font-family: Raleway;
    font-size:	1rem;
 
 }
@@ -528,7 +533,23 @@ header{
     font-size: 	0.875rem;
 }
 
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+ }
 
+ .screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* above all content */
+ }
 
 @media screen and (min-width:600px){
     .About h2{
@@ -560,7 +581,7 @@ header{
     margin-top: 3rem;
     text-align:center;
     font-size:1rem;
-    font-family: Playfair;
+    font-family: PlayfairDisplay;
     font-style:italic;
     
 
@@ -669,7 +690,7 @@ header{
         line-height: 2rem;
         margin-top: -0.5rem;
         color: white;
-        font-family: playfair;
+        font-family: Playfair;
         font-size: 1.5rem;
         font-style: italic;
     }
@@ -753,7 +774,7 @@ display: inline-flex;
    }
 
    .sign-up h2{
-    font-family: Playfair;
+    font-family: PlayfairDisplay;
     font-size:2rem;
     font-style: italic;
     color:white;
@@ -789,6 +810,9 @@ display: inline-flex;
 
         text-align: center;
         line-height: 2.5rem;
+        color:white;
+        font-family:PlayfairDisplay;
+        font-size:2rem;
 }
 
 .sign-up-form p{
