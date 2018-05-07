@@ -639,33 +639,54 @@ header {
 }
 
 form {
+  /* display: inline-flex;
+  position: relative;
+  width: 50%;
+  margin-top: 10%; */
+
+
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    margin-top: 10%;
+}
+
+
+
+button[type="submit"] {
+  
   display: flex;
   flex-direction: row;
-  width: 15rem;
-  height: 2rem;
-  margin-top: 1.5rem;
-  flex-direction: row;
-  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: flex-end;
+  /* justify-self: center; */
+  border-radius: 1rem;
+  border: 1px solid white;
+  background: #e2574c;
+  width: 40%;
+  position: absolute;
+  height: 100%;
+  padding: 0px;
+  color: white;
+  font-size: 12px;
+  line-height: 0px;
+}
+label{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 input[type="email"] {
   border-radius: 1.5rem;
-  flex-grow: 2;
   border: 0px;
+
 }
 
-button[type="submit"] {
-  border-radius: 1rem;
-  background: #e2574c;
-  border: 0px;
-  width: 5.5rem;
-  height: 1.8rem;
-  margin-left: -6rem;
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
-  color: white;
-  font-size: 14px;
-}
 
 .sign-up-image-background {
   background-image: url(images/wave-bkgd.jpg);
@@ -707,8 +728,10 @@ button[type="submit"] {
     color: white;
   }
 }
-
+/* ------------------------------------------------------------------- */
 /* sign-up for desktop min width:1240px   */
+/* ------------------------------------------------------------------- */
+
 @media screen and (min-width: 1240px) {
   .sign-up {
     /* height:30rem; */
@@ -745,27 +768,39 @@ button[type="submit"] {
   }
 
   form {
-    display: flex;
-    flex-direction: row;
-    width: 20rem;
+        
+    /* display: inline-flex; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 20%;
+
   }
+
+  label{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
   input[type="email"] {
     border-radius: 1.5rem;
-    flex-grow: 2;
     border: 0px;
+    width: 100%;
+    height: 100%;
   }
+  
 
   button[type="submit"] {
     border-radius: 1rem;
     background: #e2574c;
     border: 0px;
-    width: 6rem;
-    height: 2.25rem;
-    margin-left: -6.45rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
     color: white;
     font-size: 16px;
+    padding-right: 0px;
+    margin-right: 1%;
   }
 
   .sign-up-image-background {
