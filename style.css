@@ -1,5 +1,9 @@
-/* Header for Mobile */
-/* @media screen and (max-width:600px){ */
+/* ===================================================================================================================== */
+
+                                            /* HEADER & NAVIGATION */
+
+/* ===================================================================================================================== */
+
 
 #shop[tabindex="-1"]:focus {
   outline: 0;
@@ -19,7 +23,6 @@ header {
   background-repeat: no-repeat;
   background-position: top left;
   align-items: left;
-  justify-items: left;
   height: 30px;
   width: 50%;
   order: 1;
@@ -50,6 +53,7 @@ header {
 .top-navigation-links li {
   display: inline;
 }
+
 .top-navigation-links a {
   display: inline-block;
   /* margin-top: 5px; */
@@ -63,6 +67,10 @@ header {
   font-style: bold;
 }
 
+/* -------------------------------------------------------------------------------------------------------------------- */
+    /* HEADER & NAVIGATION for TABLET & DESKTOP */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
 @media screen and (min-width: 600px) {
   header {
     display: flex;
@@ -72,7 +80,6 @@ header {
     width: 100%;
     height: 5rem;
   }
-
   .logo {
     background-image: url(images/aloha-logo.svg);
     background-size: contain;
@@ -82,7 +89,6 @@ header {
     height: 7rem;
     width: 7rem;
   }
-
   .cart {
     background-image: url(images/cart-icon.svg);
     background-size: contain;
@@ -93,7 +99,6 @@ header {
     background-position: top right;
     order: 3;
   }
-
   .top-navigation-links {
     border-top: none;
     list-style: none;
@@ -114,9 +119,12 @@ header {
     font-size: 16px;
   }
 }
-/* banner for mobile  */
 
-/* @media screen and (max-width:600px){ */
+/* ===================================================================================================================== */
+
+                                                    /* BANNER */
+
+/* ===================================================================================================================== */
 
 .banner {
   background-image: url(images/banner-girl.png), url(images/flower-bkgd.jpg);
@@ -130,6 +138,7 @@ header {
   width: 100%;
   height: 20rem;
 }
+
 .new-collection p {
   display: flex;
   align-items: center;
@@ -151,7 +160,10 @@ header {
   font-size: 14px;
   color: white;
 }
-/* banner for tablet */
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* BANNER for TABLET & DESKTOP*/
+/* -------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 600px) {
   .banner {
@@ -166,7 +178,6 @@ header {
     width: 100%;
     height: 40rem;
   }
-
   .new-collection p {
     display: flex;
     align-items: center;
@@ -189,7 +200,12 @@ header {
   }
 }
 
-/* mobile first for shopping categories max width 600px*/
+/* ===================================================================================================================== */
+
+                                                    /* SHOPPING CATEGORIES  */
+
+/* ===================================================================================================================== */
+
 
 .shop {
   height: 40rem;
@@ -296,6 +312,7 @@ header {
   font-family: Raleway;
   font-size: 0.875rem;
 }
+
 .womens-category {
   background-image: url(images/womens-category.jpg);
   background-size: cover;
@@ -314,8 +331,9 @@ header {
   font-size: 0.875rem;
 }
 
-/* design for shopping categories on 
- tablet and desktop   */
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* shopping categories for tablet and desktop   */
+/* -------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 600px) {
   .shop {
@@ -327,10 +345,8 @@ header {
     align-content: flex-start;
     object-fit: contain;
   }
-
   .men-category {
     background-image: url(images/mens-category.jpg);
-
     height: 50%;
     width: 45%;
     background-size: cover;
@@ -349,10 +365,8 @@ header {
     font-family: Raleway;
     font-size: 1rem;
   }
-
   .trends-category {
     background-image: url(images/trends-category.jpg);
-
     height: 50%;
     width: 20%;
     background-size: cover;
@@ -371,10 +385,8 @@ header {
     font-family: Raleway;
     font-size: 1rem;
   }
-
   .glasses-category {
     background-image: url(images/glasses-category.jpg);
-
     height: 50%;
     width: 20%;
     background-size: cover;
@@ -392,10 +404,8 @@ header {
     font-family: Raleway;
     font-size: 1rem;
   }
-
   .sales-category {
     background-image: url(images/sale-category.jpg);
-
     height: 50%;
     width: 20%;
     background-size: cover;
@@ -414,10 +424,8 @@ header {
     font-family: Raleway;
     font-size: 1rem;
   }
-
   .bags-category {
     background-image: url(images/bags-category.jpg);
-
     height: 50%;
     width: 20%;
     background-size: cover;
@@ -436,10 +444,8 @@ header {
     font-family: Raleway;
     font-size: 1rem;
   }
-
   .womens-category {
     background-image: url(images/womens-category.jpg);
-
     height: 50%;
     width: 45%;
     background-size: cover;
@@ -458,6 +464,12 @@ header {
     font-size: 1rem;
   }
 }
+/* ===================================================================================================================== */
+
+                                                    /* ABOUT */
+
+/* ===================================================================================================================== */
+
 
 .About {
   display: flex;
@@ -497,8 +509,13 @@ header {
   left: 5px;
   top: 5px;
   width: auto;
-  z-index: 100000; /* above all content */
+  z-index: 100000;
+  /* above all content */
 }
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* About section tablet & desktop */
+/* -------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 600px) {
   .About h2 {
@@ -507,12 +524,10 @@ header {
     font-weight: bold;
     font-size: 2rem;
   }
-
   .About p {
     font-family: Raleway-Italic;
     font-size: 1rem;
   }
-
   .most-loved-products {
     width: 100%;
     height: 5rem;
@@ -520,7 +535,12 @@ header {
     text-align: center;
   }
 }
-/*caroussel */
+
+/* ===================================================================================================================== */
+
+                                                    /* CAROUSSEL */
+
+/* ===================================================================================================================== */
 
 .most-loved-products {
   width: 100%;
@@ -531,6 +551,11 @@ header {
   font-family: PlayfairDisplay;
   font-style: italic;
 }
+
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* Caroussel for tablet and desktop   */
+/* -------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 600px) {
   .most-loved-products {
@@ -567,6 +592,7 @@ header {
   align-content: center;
   align-items: center;
 }
+
 .carousel-cell3 {
   /* width: 30%; */
   /* height: 500px; */
@@ -588,6 +614,7 @@ header {
   align-content: center;
   align-items: center;
 }
+
 .carousel-cell:before {
   display: block;
   text-align: center;
@@ -599,7 +626,12 @@ header {
   color: black;
 }
 
-/* for mobile  */
+/* =================================================================================================================== */
+
+                                                    /* SIGN-UP */
+
+/* =================================================================================================================== */
+
 @media screen and (max-width: 600px) {
   .sign-up {
     width: 100%;
@@ -608,7 +640,6 @@ header {
     flex-wrap: wrap;
     padding-top: 5rem;
   }
-
   .sign-up-form {
     display: flex;
     text-align: center;
@@ -617,7 +648,6 @@ header {
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .sign-up-form h2 {
     text-align: center;
     line-height: 2rem;
@@ -627,7 +657,6 @@ header {
     font-size: 1.5rem;
     font-style: italic;
   }
-
   .sign-up-form p {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -643,18 +672,14 @@ form {
   position: relative;
   width: 50%;
   margin-top: 10%; */
-
-
-    display: inline-block;
-    position: relative;
-    width: 50%;
-    margin-top: 10%;
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  height: 2rem;
+  margin-top: 10%;
 }
 
-
-
 button[type="submit"] {
-  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -672,7 +697,8 @@ button[type="submit"] {
   font-size: 12px;
   line-height: 0px;
 }
-label{
+
+label {
   width: 100%;
   height: 100%;
   display: flex;
@@ -684,9 +710,9 @@ label{
 input[type="email"] {
   border-radius: 1.5rem;
   border: 0px;
-
+  height: 100%;
+  width: 100%;
 }
-
 
 .sign-up-image-background {
   background-image: url(images/wave-bkgd.jpg);
@@ -701,26 +727,27 @@ input[type="email"] {
   justify-content: center;
   height: 15rem;
 }
-/* tablet only */
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* sign-up for tablet  */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+
 @media only screen and (max-width: 1240px) and (min-width: 600px) {
   .sign-up {
     margin-top: 2.5rem;
   }
-
   .form {
     flex-direction: row;
     width: 15rem;
     margin-top: 1.5rem;
     display: inline-flex;
   }
-
   .sign-up p {
     color: white;
     font-family: Raleway;
     font-size: 1rem;
     margin-top: 1rem;
   }
-
   .sign-up h2 {
     font-family: PlayfairDisplay;
     font-size: 2rem;
@@ -728,9 +755,10 @@ input[type="email"] {
     color: white;
   }
 }
-/* ------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------------------------------------------------- */
 /* sign-up for desktop min width:1240px   */
-/* ------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 1240px) {
   .sign-up {
@@ -741,7 +769,6 @@ input[type="email"] {
     flex-wrap: wrap;
     padding-top: 5rem;
   }
-
   .sign-up-form {
     display: flex;
     text-align: center;
@@ -750,7 +777,6 @@ input[type="email"] {
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .sign-up-form h2 {
     text-align: center;
     line-height: 2.5rem;
@@ -758,7 +784,6 @@ input[type="email"] {
     font-family: PlayfairDisplay;
     font-size: 2rem;
   }
-
   .sign-up-form p {
     margin-left: 15rem;
     margin-right: 15rem;
@@ -766,33 +791,26 @@ input[type="email"] {
     color: white;
     font-family: Raleway;
   }
-
   form {
-        
     /* display: inline-flex; */
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0px;
     width: 20%;
-
   }
-
-  label{
+  label {
     width: 100%;
     height: 100%;
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  
   input[type="email"] {
     border-radius: 1.5rem;
     border: 0px;
     width: 100%;
     height: 100%;
   }
-  
-
   button[type="submit"] {
     border-radius: 1rem;
     background: #e2574c;
@@ -802,7 +820,6 @@ input[type="email"] {
     padding-right: 0px;
     margin-right: 1%;
   }
-
   .sign-up-image-background {
     background-image: url(images/wave-bkgd.jpg);
     background-size: cover;
@@ -817,7 +834,13 @@ input[type="email"] {
   }
 }
 
-/* footer mobile logo only for social */
+/* =================================================================================================================== */
+
+/* FOOTER */
+
+/* =================================================================================================================== */
+
+
 
 footer {
   background: #242424;
@@ -825,11 +848,6 @@ footer {
   height: 9.5rem;
   width: 100%;
 }
-/* display: inline;
-   height: 200px;
-   justify-content: space-between;*/
-
-/* design for mobile  */
 
 .contact {
   display: flex;
@@ -860,7 +878,6 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
   }
-
   .social ul {
     display: flex;
     justify-content: center;
@@ -869,6 +886,11 @@ footer {
     visibility: hidden;
   }
 }
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* footer for tablet and desktop   */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
 
 @media screen and (min-width: 600px) {
   .contact {
@@ -880,7 +902,6 @@ footer {
     align-content: space-between;
     margin-top: 0.5rem;
   }
-
   .address {
     width: 50%;
     text-align: left;
@@ -888,7 +909,6 @@ footer {
     margin-top: 0.5rem;
     margin-left: 1rem;
   }
-
   .social {
     width: 15%;
     color: white;
