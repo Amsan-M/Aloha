@@ -40,6 +40,12 @@ header {
   order: 2;
 }
 
+#cartCount{
+  background-color:red;
+  border-radius:150px;
+  font-size:20px;
+}
+
 .top-navigation-links {
   border-top: 0.15rem solid #d7d7d7;
   list-style: none;

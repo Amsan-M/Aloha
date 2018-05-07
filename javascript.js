@@ -1,7 +1,7 @@
-console.log ("Hello");
+console.log("Hello");
 
-$(document).ready(function(e) {
-    $('#btnValidate').click(function() {
+$(document).ready(function (e) {
+    $('#btnValidate').click(function () {
         var regex = $('#txtEmail').val();
         if ($.trim(regex).length == 0) {
             alert('Please enter an email address');
@@ -26,3 +26,17 @@ function validateEmail(regex) {
         return false;
     }
 }
+
+
+// add to cart update
+
+
+var count = 0;
+var button = document.getElementById("addToCartBtn");
+var display = document.getElementById("cartCount");
+
+button.onclick = function(){
+  count++;
+  display.innerHTML = count;
+}
+
